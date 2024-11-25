@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F9F5F2;
+    color: #5D4037;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #865735;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #865735;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #6C4F3E;
+}
+
+/* Carrinho - Estático, sem efeito de hover */
+.nav .carrinho {
+    background-color: #865735;
+    color: #FFF; /* Cor do texto */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: none;  /* Garantindo que não haja sombra */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFF5E6;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #865735;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #6C4F3E;
+}
+
+/* Seção de Produtos */
+.produtos {
+    text-align: center;
+    padding: 50px 20px;
+    text-decoration: none;
+}
+
+.produtos h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #5D4037;
+}
+
+.produtos ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produtos .item {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.produtos .item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produtos .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFF;
+    color: #5D4037;
+    font-size: 14px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.produtos a {
+    text-decoration: none; 
+    color: inherit;         /* Faz o link herdar a cor do texto */
+}
+
+.produtos a:hover {
+    text-decoration: none;  /* Remove o sublinhado no hover também */
+}
+
+.liao {
+    height: 50%;
+    max-width: 100%;
+}

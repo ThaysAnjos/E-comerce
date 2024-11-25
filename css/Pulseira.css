@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F9F5F2;
+    color: #5D4037;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #865735;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #6C4F3E;
+}
+
+/* Seção de Produtos */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #865735;
+    font-size: 24px;
+}
+
+#produto-lista {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.produto-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.produto-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto-info h3 {
+    font-size: 18px;
+    color: #865735;
+    margin: 10px 0;
+}
+
+.produto-info p {
+    font-size: 14px;
+    color: #5D4037;
+}
+
+.preco {
+    font-size: 16px;
+    color: red;
+    margin: 10px 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #865735;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: #e77575;
+}
+
+/* Rodapé */
+footer {
+    background-color: #865735;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .produto-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .produtos {
+        padding: 30px 10px;
+    }
+}

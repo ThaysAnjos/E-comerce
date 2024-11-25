@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de compras</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cart-container">
+    <h1>Carrinho de compras</h1>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Os itens são renderizados aqui -->
+      </tbody>  
+    </table>
+    <div class="cart-summary">
+      <h2>Sumário de compras</h2>
+      <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
+      <p>Entrega: <span id="delivery">R$ 100,00</span></p>
+      <p><strong>Total: <span id="total">R$ 100,00</span></strong></p>
+      <button class="btn checkout">Checkout</button>
+  </div>
+  <script src="./js/Script.js"></script>
+</body>
+</html>
